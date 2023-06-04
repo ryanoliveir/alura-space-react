@@ -1,5 +1,8 @@
 import Header from '../../components/PageHeader';
 import Sidebar from '../../components/Sidebar';
+import Banner from '../../components/Banner';
+
+import styles from './Home.module.scss'
 
 const Items = [
     {
@@ -24,13 +27,22 @@ const Items = [
     }
 ]
 
-
-
 const Home = () => {
     return (
         <>
             <Header />
-            <Sidebar menuItems={Items}/>
+            <main>
+                <section className={styles.main_container}>
+                    <Sidebar menuItems={Items}/>
+                    <div className={styles.main_container__banner}>
+                        <Banner
+                          text="A galeria mais completa do espaço" 
+                          imagePath="/assets/banner.png" 
+                        />
+                    </div>
+                </section>
+
+            </main>
         </>
     )
 
