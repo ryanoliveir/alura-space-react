@@ -1,9 +1,10 @@
-import './App.css';
-
+import './styles/globals.scss'
+// import Home from './pages/Home'
+import Header from './components/PageHeader';
 function App() {
   return (
     <div className="App">
-      <h1>Alura Space</h1>
+      <Header />
     </div>
   );
 }
