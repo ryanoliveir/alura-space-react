@@ -67,3 +67,12 @@ $border-radius: 4px;
 }
 
 ```
+
+
+### __Sumary #3__
+
+- Add the files GlobalStyle.scss and _variables.scss;
+- How to use normalize.css;
+- How to organize and use variable css;
+- How to configure font files in the project;
+- How to import these fonts using @fontface.

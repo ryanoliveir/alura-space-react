@@ -1,6 +1,7 @@
 import Header from '../../components/PageHeader';
 import Sidebar from '../../components/Sidebar';
 import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
 
 import styles from './Home.module.scss'
 
@@ -43,6 +44,7 @@ const Home = () => {
                 </section>
 
             </main>
+            <Footer />
         </>
     )
 

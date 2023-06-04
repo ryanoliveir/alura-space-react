@@ -1,10 +1,30 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap');
+@import './variables';
+
+@font-face {
+    font-family: "GandhiSansRegular";
+    src: local("GandhiSansRegular"),
+        url("../../public/assets/fonts/GandhiSans-Regular.otf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GandhiSansBold";
+    src: local("GandhiSansBold"),
+        url("../../public/assets/fonts/GandhiSans-Bold.otf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+
 
 body {
     margin: 0;
     padding: auto;
     min-height: 100vh;
-    background-image: linear-gradient(#041833, #154580);
+    background-image: linear-gradient($dark-blue, $light-blue);
     box-sizing: border-box;
 }
 
@@ -12,9 +32,9 @@ body::-webkit-scrollbar {
     width: 3px;
 }
 body::-webkit-scrollbar-track {
-    background: linear-gradient(#041833, #154580);
+    background: linear-gradient($dark-blue, $light-blue);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #154580;
+    background-color: $light-blue;
     border-radius: 20px;
 }
