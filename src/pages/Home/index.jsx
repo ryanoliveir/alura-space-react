@@ -2,6 +2,7 @@ import Header from '../../components/PageHeader';
 import Sidebar from '../../components/Sidebar';
 import Banner from '../../components/Banner';
 import Gallery from '../../components/Gallery';
+import Popular from '../../components/Popular';
 import Footer from '../../components/Footer';
 
 import styles from './Home.module.scss'
@@ -43,10 +44,11 @@ const Home = () => {
                         />
                     </div>
                 </section>
+                <div className={styles.gallery_container}>
+                    <Gallery />
+                    <Popular />
+                </div>
             </main>
-            <div className={styles.gallery_container}>
-                <Gallery />
-            </div>
             <Footer />
         </>
     )

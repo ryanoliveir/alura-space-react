@@ -75,9 +75,6 @@ const galleryImages = [
       "tag": "Estrelas"
     }
   ]
-  
-
-
 const Gallery = () => {
     return (
         <section className={styles.gallery}>
@@ -86,13 +83,13 @@ const Gallery = () => {
             <ul className={styles.gallery__cards}>
                 {galleryImages.map(galleryImage => {
                     return (
-                         <li key={galleryImage.id}>
-                            <Card 
-                              pictureName={galleryImage.title}
-                              imagePATH={galleryImage.image}
-                              credits={galleryImage.credits}
-                            />
-                        </li>
+                        <li key={galleryImage.id}>
+                          <Card 
+                            pictureName={galleryImage.title}
+                            imagePATH={galleryImage.image}
+                            credits={galleryImage.credits}
+                          />
+                      </li>
                     ) 
                 })}
             </ul>

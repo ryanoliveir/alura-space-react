@@ -9,6 +9,7 @@ const Tags = () => {
                 <li>Galáxias</li>
                 <li>Lua</li>
                 <li>Planetas</li>
+                <li>Todas</li>
             </ul>
         </div>
     )
