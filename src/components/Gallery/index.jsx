@@ -92,10 +92,8 @@ const Gallery = () => {
 
     setItems(newImages);
   };
-
     
   const showAllImages = () => {
-    console.log("show all images");
     setItems(galleryImages);
   }
 
