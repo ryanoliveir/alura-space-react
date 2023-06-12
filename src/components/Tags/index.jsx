@@ -1,15 +1,27 @@
 import styles from './Tags.module.scss'
 
-const Tags = () => {
+const Tags = ({ tags, onTagClick, completeGallery }) => {
+
+
+    const selectTag = (tag) => {
+        onTagClick(tag);
+    };
+
+    
+
     return (
         <div className={styles.tags}>
             <p> Busque por Tags</p>
             <ul className={styles.tags__list}>
-                <li>Estrelas</li>
-                <li>Galáxias</li>
-                <li>Lua</li>
-                <li>Planetas</li>
-                <li>Todas</li>
+               {tags.map((tag,index) => {
+                return (
+                    <li key={index} 
+                        onClick={() => selectTag(tag)}>
+                        {tag}
+                    </li>
+                )
+               })}
+               <li onClick={completeGallery}>Todas</li>
             </ul>
         </div>
     )
