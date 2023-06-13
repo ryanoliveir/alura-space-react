@@ -11,7 +11,7 @@ const Sidebar = ({ menuItems }) => {
                         <li className={styles.menu__item} key={index}>
                             <Item 
                                 label={item.label} 
-                                imagePath={item.imagePath}
+                                imagePath={ process.env.PUBLIC_URL + item.imagePath}
                             />
                         </li>
                     )

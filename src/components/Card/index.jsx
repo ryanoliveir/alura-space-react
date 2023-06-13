@@ -14,7 +14,7 @@ const Card = ({pictureName, imagePATH, credits}) => {
         <div className={styles.card}>
             <img 
                 className={styles.card__image} 
-                src={imagePATH} 
+                src={process.env.PUBLIC_URL + imagePATH} 
                 alt={pictureName} 
             />
             <p className={styles.card__description}>
