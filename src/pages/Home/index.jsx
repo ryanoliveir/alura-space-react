@@ -10,23 +10,23 @@ import styles from './Home.module.scss'
 const Items = [
     {
         label: 'Inicio',
-        imagePath: '/assets/icons/home-ativo.png'
+        imagePath: 'assets/icons/home-ativo.png'
     },
     {
         label: 'Mais vistas',
-        imagePath: '/assets/icons/mais-curtidas-inativo.png'
+        imagePath: 'assets/icons/mais-curtidas-inativo.png'
     },
     {
         label: 'Mais curtidas',
-        imagePath: '/assets/icons/mais-vistas-inativo.png'
+        imagePath: 'assets/icons/mais-vistas-inativo.png'
     },
     {
         label: 'Novas',
-        imagePath: '/assets/icons/novas-inativo.png'
+        imagePath: 'assets/icons/novas-inativo.png'
     },
     {
         label: 'Surpreenda-me',
-        imagePath: '/assets/icons/surpreenda-me-inativo.png'
+        imagePath: 'assets/icons/surpreenda-me-inativo.png'
     }
 ]
 
@@ -40,7 +40,7 @@ const Home = () => {
                     <div className={styles.main_container__banner}>
                         <Banner
                           text="A galeria mais completa do espaço" 
-                          imagePath="/assets/banner.png" 
+                          imagePath="assets/banner.png" 
                         />
                     </div>
                 </section>
